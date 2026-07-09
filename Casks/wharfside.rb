@@ -1,6 +1,6 @@
 cask "wharfside" do
   version "0.1.0"
-  sha256 "a2e69c54c05dfe565e8b2f84619fe144f7c2105a97621bf23752fa20555fd256" # first field of the .sha256 file
+  sha256 "REPLACE_WITH_CONTENTS_OF_Wharfside.dmg.sha256" # first field of the .sha256 file
 
   url "https://github.com/wharfside/wharfside/releases/download/v#{version}/Wharfside.dmg"
   name "Wharfside"
@@ -8,9 +8,8 @@ cask "wharfside" do
   homepage "https://wharfside.app"
 
   auto_updates false
-  # The actual deployment target (Xcode project build setting MACOSX_DEPLOYMENT_TARGET).
-  # The real minimum OS your app supports.
-  depends_on macos: :sequoia
+  # Requires macOS 26 (Tahoe) to use FoundationModels
+  depends_on macos: :tahoe
 
   app "Wharfside.app"
 
