@@ -8,10 +8,9 @@ cask "wharfside" do
   homepage "https://wharfside.app"
 
   auto_updates false
-  # CHECK: set to your actual deployment target (Xcode project build setting
-  # MACOSX_DEPLOYMENT_TARGET). ":sequoia" is a placeholder — swap for the
-  # real minimum OS your app supports.
-  depends_on macos: ">= :sequoia"
+  # The actual deployment target (Xcode project build setting MACOSX_DEPLOYMENT_TARGET).
+  # The real minimum OS your app supports.
+  depends_on macos: :sequoia
 
   app "Wharfside.app"
 
