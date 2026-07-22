@@ -1,8 +1,8 @@
 cask "wharfside" do
-  version "0.1.0"
-  sha256 "REPLACE_WITH_CONTENTS_OF_Wharfside.dmg.sha256" # first field of the .sha256 file
+  version "0.1.1"
+  sha256 "eb56cbbfbe139effc7c6cd3f0de56af71a2d77710e57e668f9e909a139a30308" # first field of the .sha256 file
 
-  url "https://github.com/wharfside/wharfside/releases/download/v#{version}/Wharfside.dmg"
+  url "https://github.com/wharfside/wharfside/releases/download/v0.1.1/Wharfside.dmg"
   name "Wharfside"
   desc "Native macOS GUI for apple/container with on-device AI log diagnosis"
   homepage "https://wharfside.app"
