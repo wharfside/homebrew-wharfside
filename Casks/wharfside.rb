@@ -4,8 +4,8 @@ cask "wharfside" do
 
   url "https://github.com/wharfside/wharfside/releases/download/v0.1.1/Wharfside.dmg"
   name "Wharfside"
-  desc "Native macOS GUI for apple/container with on-device AI log diagnosis"
-  homepage "https://wharfside.app"
+  desc "On-device AI crash diagnosis for Apple's container runtime"
+  homepage "https://wharfside.app/"
 
   auto_updates false
   # Requires macOS 26 (Tahoe) to use FoundationModels
@@ -13,7 +13,6 @@ cask "wharfside" do
 
   app "Wharfside.app"
 
-  # CHECK: confirm this matches CFBundleIdentifier in Info.plist.
   zap trash: [
     "~/Library/Application Support/Wharfside",
     "~/Library/Caches/app.wharfside.Wharfside",
