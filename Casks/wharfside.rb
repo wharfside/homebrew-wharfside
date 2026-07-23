@@ -2,7 +2,8 @@ cask "wharfside" do
   version "0.1.1"
   sha256 "eb56cbbfbe139effc7c6cd3f0de56af71a2d77710e57e668f9e909a139a30308" # first field of the .sha256 file
 
-  url "https://github.com/wharfside/wharfside/releases/download/v0.1.1/Wharfside.dmg"
+  url "https://github.com/wharfside/wharfside/releases/download/v#{version}/Wharfside.dmg",
+      verified: "github.com/wharfside/wharfside/"
   name "Wharfside"
   desc "On-device AI crash diagnosis for Apple's container runtime"
   homepage "https://wharfside.app/"
