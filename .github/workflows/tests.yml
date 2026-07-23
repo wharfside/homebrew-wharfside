@@ -17,4 +17,5 @@ jobs:
       - name: Audit cask
         run: |
           brew tap wharfside/wharfside "$GITHUB_WORKSPACE"
+          brew trust --tap wharfside/wharfside
           brew audit --cask --online wharfside
